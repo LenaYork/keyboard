@@ -65,9 +65,12 @@ li {
 .header-container{
     margin-top: 52px;
     background-color: #fff;
+    height: 80px;
 }
 
 .header {
+    position: fixed;
+    top: 0px;
     box-sizing: border-box;
     max-width: 1280px;
     width: 1280px;
@@ -78,6 +81,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .logo-title {
@@ -89,6 +93,13 @@ li {
     display: flex;
     align-items: center;
     letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.logo-title a {
+    color: #545454;
+}
+.logo-title a:visited {
     color: #545454;
 }
 
@@ -174,6 +185,8 @@ li {
 
 .friend-item:hover {
     outline: 3px solid #9f9d9d;
+    cursor: grab;
+    background-color: #F1CDB3;
 }
 
 .pet-name {
