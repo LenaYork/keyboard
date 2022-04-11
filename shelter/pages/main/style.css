@@ -389,6 +389,7 @@ li {
 .help-title {
     max-width: 308px;
     margin: 0 auto;
+    margin-bottom: 50px;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
