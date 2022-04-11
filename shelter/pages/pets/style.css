@@ -58,6 +58,10 @@ li {
     transition: 0.5s;
 }
 
+.button:active {
+    outline: 2px solid #292929;
+}
+
 .header-container{
     margin-top: 52px;
     background-color: #fff;
@@ -128,7 +132,7 @@ li {
 
 .main-container{
     background-color: #F6F6F6;
-    padding: 50px 40px 0;
+    padding: 50px 40px;
 }
 
 .main {
@@ -201,6 +205,19 @@ li {
 
 .pet-button:hover {
     background-color: #c69c7d;
+}
+
+.pets-arrows {
+    margin: 0 auto;
+    width: 340px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pets-arrows img:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    outline: 1px solid #c69c7d;
 }
 
 .footer-container {
