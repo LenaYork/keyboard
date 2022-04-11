@@ -126,6 +126,83 @@ li {
 }
 
 
+.main-container{
+    background-color: #F6F6F6;
+    padding: 50px 40px 0;
+}
+
+.main {
+    max-width: 1280px;
+    
+}
+
+.friends-title {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.friends-items {
+    width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friend-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    background-color: #fff;
+}
+
+.friend-item:hover {
+    outline: 3px solid #9f9d9d;
+}
+
+.pet-name {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.pet-button {
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: #fff;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.pet-button:hover {
+    background-color: #c69c7d;
+}
+
 .footer-container {
     width: 100%;
     height: 350px;
