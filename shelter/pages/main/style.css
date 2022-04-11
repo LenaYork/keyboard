@@ -16,6 +16,14 @@
 html {
     scroll-behavior: smooth;
     transition: 1s;
+    overflow: overlay;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -76,22 +84,23 @@ li {
 }
 
 .wrapper {
-    width: 99vw;
-    height: 100vh;
+    /* width: 99vw;
+    height: 100vh; */
     /* border: 5px solid lime; */
     /* background-color: #534235; */
 }
 
 .top-container {
-    width: 100%;
+    /* width: 100%; */
     height: 894px;
     background: linear-gradient(to right, #534235, #222021);
     padding-top: 60px;
 }
 
 .header {
+    box-sizing: border-box;
     max-width: 1280px;
-    width: 1280px;
+    width: 1200px;
     margin: 0 auto;
     margin-bottom: 60px;
     padding: 0 40px;
@@ -156,6 +165,7 @@ li {
 }
 
 .not-only {
+    box-sizing: border-box;
     max-width: 1280px;
     width: 1280px;
     margin: 0 auto;
@@ -199,6 +209,7 @@ li {
 }
 
 .about {
+    box-sizing: border-box;
     max-width: 1280px;
     width: 1280px;
     margin: 90px auto;
@@ -236,6 +247,7 @@ li {
 }
 
 .friends {
+    box-sizing: border-box;
     max-width: 1280px;
     width: 1280px;
     margin: 0 auto;
@@ -261,13 +273,50 @@ li {
 }
 
 .help {
+    box-sizing: border-box;
     max-width: 1280px;
     width: 1280px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 70px 40px;
+}
+
+.help-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-item p {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.help-item img {
+    width: 60px;
+    height: 60px;
+}
+
+.icons1, .icons2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons2 {
+    margin-top: 30px;
 }
 
 .help-title {
+    max-width: 308px;
+    margin: 0 auto;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -287,6 +336,7 @@ li {
 }
 
 .addition {
+    box-sizing: border-box;
     max-width: 1280px;
     width: 1280px;
     margin: 0 auto;
@@ -376,10 +426,11 @@ li {
 }
 
 .footer {
+    box-sizing: border-box;
     max-width: 1280px;
     width: 1280px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 40px 40px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -432,4 +483,8 @@ li {
 .map-icon1 {
     height: 32px;
     width: 22px;
+}
+
+.footer-pic {
+    height: 310px;
 }
