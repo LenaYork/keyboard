@@ -58,6 +58,12 @@ li {
     transition: 0.5s;
 }
 
+.arrow:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    outline: 1px solid #c69c7d;
+}
+
 .makeFriend-button {
     width: 207px;
     height: 52px;
@@ -70,7 +76,7 @@ li {
 }
 
 .makeFriend-link {
-    color: black;
+    color: #292929;
 }
 
 .makeFriend-link:hover {
@@ -78,9 +84,18 @@ li {
 }
 
 .friends-button {
+    margin: 0 auto;
     width: 261px;
     height: 52px;
     background: #F1CDB3;
+}
+
+.friends-button a{
+    color: black;
+}
+
+.friends-button:hover {
+    background-color: #b07d59;
 }
 
 .wrapper {
@@ -251,10 +266,15 @@ li {
     max-width: 1280px;
     width: 1280px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .friends-title {
+    max-width: 400px;
+    margin: 0 auto;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -265,6 +285,58 @@ li {
     text-align: center;
     letter-spacing: 0.06em;
     color: #545454;
+}
+
+.friends-items {
+    width: 1200px;
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friend-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    background-color: #fff;
+}
+
+.friend-item:hover {
+    outline: 3px solid #9f9d9d;
+}
+
+.pet-name {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.pet-button {
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: #fff;
+
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.pet-button:hover {
+    background-color: #c69c7d;
 }
 
 .help-container {
