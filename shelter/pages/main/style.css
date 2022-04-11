@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
 a {
     text-decoration: none;
 }
@@ -12,8 +17,6 @@ li {
 
 .button {
     padding: 15px 45px;
-    
-    
     border-radius: 100px;
     outline: none;
     border: none;
@@ -43,6 +46,14 @@ li {
     color: #fff;
 }
 
+.makeFriend-link {
+    color: black;
+}
+
+.makeFriend-link:hover {
+    color: #fff;
+}
+
 .friends-button {
     width: 261px;
     height: 52px;
@@ -50,9 +61,9 @@ li {
 }
 
 .wrapper {
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
-    border: 5px solid lime;
+    /* border: 5px solid lime; */
     /* background-color: #534235; */
 }
 
@@ -168,7 +179,6 @@ li {
     color: #CDCDCD;
 }
 
-
 .about-container {
     width: 100%;
     background-color: #fff;
@@ -177,11 +187,14 @@ li {
 .about {
     max-width: 1280px;
     width: 1280px;
-    margin: 0 auto;
+    margin: 90px auto;
     padding: 0 40px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .about-title {
+    max-width: 370px;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -194,6 +207,7 @@ li {
 }
 
 .about-text {
+    max-width: 430px;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
