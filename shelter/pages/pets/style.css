@@ -145,8 +145,9 @@ li {
     color: #434343;
 }
 
-.active-link {
+.active-nav-link {
     border-bottom: 3px solid #F1CDB3;
+    color: #434343;
 }
 
 

@@ -173,8 +173,9 @@ li {
     color: #fafafa;
 }
 
-.active-link {
+.active-nav-link {
     border-bottom: 3px solid #F1CDB3;
+    color: #fafafa;
 }
 
 .not-only-container {
