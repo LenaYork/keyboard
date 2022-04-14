@@ -64,8 +64,8 @@ li {
 
 .arrow:hover {
     cursor: pointer;
+    background-color: #f1cdb3;
     border-radius: 50%;
-    outline: 1px solid #c69c7d;
 }
 
 .makeFriend-button {
@@ -75,16 +75,11 @@ li {
 }
 
 .makeFriend-button:hover {
-    background: #4a2a18;
-    color: #fff;
+    background: #fddcc4;
 }
 
 .makeFriend-link {
     color: #292929;
-}
-
-.makeFriend-link:hover {
-    color: #fff;
 }
 
 .friends-button {
@@ -99,7 +94,7 @@ li {
 }
 
 .friends-button:hover {
-    background-color: #b07d59;
+    background-color: #fddcc4;
 }
 
 .wrapper {
@@ -110,7 +105,6 @@ li {
 }
 
 .top-container {
-    /* width: 100%; */
     height: 894px;
     background: linear-gradient(to right, #534235, #222021);
     padding-top: 60px;
@@ -137,6 +131,7 @@ li {
     line-height: 110%;
     display: flex;
     align-items: center;
+    margin-bottom: 1px;
     letter-spacing: 0.06em;
     color: #F1CDB3;
 }
@@ -165,13 +160,17 @@ li {
 .header-nav-link {
     width: 100%;
     margin-left: 35px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-    color: #FAFAFA;
+    color: #cdcdcd;
+}
+
+.header-nav-link:hover, .header-nav-link:active {
+    color: #fafafa;
 }
 
 .active-link {
@@ -309,7 +308,12 @@ li {
 }
 
 .friend-item:hover {
-    outline: 3px solid #9f9d9d;
+    cursor: pointer;
+    background-color: #fafafa;
+}
+
+.friend-item:hover .button{
+    background-color: #f1cdb3;
 }
 
 .pet-name {
@@ -340,7 +344,7 @@ li {
 }
 
 .pet-button:hover {
-    background-color: #c69c7d;
+    background-color: #fddcc4;
 }
 
 .help-container {
@@ -499,7 +503,7 @@ li {
 .footer-container {
     width: 100%;
     height: 350px;
-    background: linear-gradient(to right, #534235, #222021);
+    background: linear-gradient(to right, #534235, #18181a);
 }
 
 .footer {
