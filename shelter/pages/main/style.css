@@ -107,23 +107,94 @@ li {
 .top-container {
     height: 894px;
     background: linear-gradient(to right, #534235, #222021);
-    padding-top: 60px;
 }
 
-.header {
-    box-sizing: border-box;
-    max-width: 1280px;
-    width: 1200px;
-    margin: 0 auto;
-    margin-bottom: 60px;
-    padding: 0 40px;
+@media(min-width: 1280px) {
+    .top-container {
+        padding-top: 60px;
+        height: 908px;
+    }
 
+    .header {
+        max-width: 1280px;
+        margin: 0 auto 60px;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-nav {
+        width:  443px;
+    }
+
+    .not-only {
+        height: 728px;
+        box-sizing: border-box;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width:768px) and (max-width: 1279px) {
+    .top-container {
+        padding-top: 30px;
+        height: 1165px;
+    }
+
+    .header {
+        margin: 0 auto 30px;
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-nav {
+        width: 443px;
+    }
+
+    .not-only {
+        padding-top: 30px;
+        height: 1015px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .makeFriend-button {
+        align-self: center;
+        margin-bottom: 100px;
+    }
+    
+    .not-only-pic {
+        margin-left: 139px;
+        line-height: 1;
+    }
+
+    .not-only-pic img{
+        width: 569px;
+        height: 593px;
+    }
+}
+
+.top-container, .header {
+    box-sizing: border-box;
+}
+
+.logo-area {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    height: 60px;
 }
 
 .logo-title {
+    margin: 0;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
@@ -131,12 +202,12 @@ li {
     line-height: 110%;
     display: flex;
     align-items: center;
-    margin-bottom: 1px;
     letter-spacing: 0.06em;
     color: #F1CDB3;
 }
 
 .logo-text {
+    margin: 0;
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
@@ -150,17 +221,13 @@ li {
 
 .header-ul {
     display: flex;
-    justify-content: end;
-}
-
-.menu-nav {
-    width: 50%;
+    justify-content: space-between;
+    padding-inline-start: 0;
+    margin: 0;
 }
 
 .header-nav-link {
-    width: 100%;
-    margin-left: 35px;
-    padding-bottom: 5px;
+    /* width: 100%; */
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
@@ -179,23 +246,13 @@ li {
 }
 
 .not-only-container {
-    width: 100%;
     background-color: #534235;
 }
 
-.not-only {
-    box-sizing: border-box;
-    max-width: 1280px;
-    width: 1280px;
-    margin: 0 auto;
-    padding: 0 40px;
-    display: flex;
-    justify-content: space-between;
-}
-
 .not-only-info {
-    max-width: 460px;
-    align-self: center;
+    width: 460px;
+    display: flex;
+    flex-direction: column;
 }
 
 .not-only-title {
