@@ -105,7 +105,6 @@ li {
 }
 
 .top-container {
-    height: 894px;
     background: linear-gradient(to right, #534235, #222021);
 }
 
@@ -136,6 +135,15 @@ li {
         padding: 0 40px;
         display: flex;
         justify-content: space-between;
+    }
+
+    .not-only-info {
+        width: 460px;
+        height: 322px;
+    }
+
+    .not-only-title {
+        font-size: 44px;
     }
 
     .about-container {
@@ -261,6 +269,21 @@ li {
     .top-container {
         padding-top: 30px;
         height: 1165px;
+    }
+
+    .not-only-title {
+        font-size: 44px;
+    }
+
+    .not-only-info {
+        width: 460px;
+        height: 322px;
+    }
+
+    .not-only-pic img {
+        width: 260px;
+        height: 271.77px;
+        margin-top: 100px;
     }
 
     .header {
@@ -420,6 +443,46 @@ li {
 }
 
 @media(min-width: 320px) and (max-width: 768px) {
+
+    .top-container {
+        box-sizing: border-box;
+        height: 823px;
+        padding: 30px 10px 0;
+    }
+
+    .not-only-info {
+        width: 300px;
+        height: 296px;
+        padding-top: 60px;
+        margin: 0 auto;
+    }
+
+    .makeFriend-button {
+        margin: 0 auto;
+    }
+
+    .not-only-title {
+        width: 230px;
+        font-size: 25px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .not-only-pic {
+        width: 260px;
+        height: 271.77px;
+        margin: 0 auto;
+        margin-top: 105px;
+    }
+
+    .not-only-pic img{
+        width: 260px;
+        height: 271.77px;
+    }
+
+    .menu-nav {
+        display: none;
+    }
 
     .help-container {
         box-sizing: border-box;
@@ -596,7 +659,6 @@ li {
 }
 
 .not-only-info {
-    width: 460px;
     display: flex;
     flex-direction: column;
 }
@@ -606,7 +668,6 @@ li {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: 44px;
     line-height: 130%;
     display: flex;
     align-items: center;
