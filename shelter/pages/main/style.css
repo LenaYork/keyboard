@@ -229,6 +229,27 @@ li {
         font-size: 20px;
     }
 
+    .footer-container {
+        height: 350px;
+        padding: 40px 40px 0;
+    }
+
+    .footer {  
+        width: 1280px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-contacts {
+        max-width: 278px;
+        height: 234px;
+    }
+    
+    .footer-address {
+        max-width: 302px;
+        height: 234px;
+    }
 }
 
 @media(min-width:768px) and (max-width: 1279px) {
@@ -315,7 +336,6 @@ li {
     .help-item {
         width: 170px;
         height: 113px;
-        /* margin-right: 60px; */
         margin-bottom: 55px;
     }
 
@@ -357,6 +377,35 @@ li {
 
     .card-number-text {
         font-size: 20px;
+    }
+
+    .footer-container {
+        height: 639px;
+        padding: 30px 30px 0;
+    }
+
+    .footer {  
+        max-width: 768px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "footer-contacts footer-address" 
+                            "footer-pic footer-pic";
+    }
+        
+
+    .footer-contacts {
+        max-width: 278px;
+        height: 234px;
+    }
+    
+    .footer-address {
+        max-width: 302px;
+        height: 234px;
+    }
+
+    .footer-pic {
+        margin: 0 auto;
     }
 }
 
@@ -431,6 +480,36 @@ li {
     .card-number-text {
         font-size: 15px;
     }
+
+    .footer-container {
+        height: 809px;
+        padding: 30px 10px 0;
+    }
+
+    .footer {  
+        max-width: 320px;
+        height: 779px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer-contacts {
+        max-width: 278px;
+        height: 208px;
+        margin-bottom: 40px;
+    }
+    
+    .footer-address {
+        max-width: 300px;
+        height: 222px;
+        margin-bottom: 40px;
+    }
+
+    .footer-pic img{
+        width: 260px;
+        height: 269px;
+    } 
 }
 
 .top-container, .header {
@@ -796,19 +875,13 @@ li {
 }
 
 .footer-container {
-    width: 100%;
-    height: 350px;
+    box-sizing: border-box;
     background: linear-gradient(to right, #534235, #18181a);
 }
 
 .footer {
     box-sizing: border-box;
-    max-width: 1280px;
-    width: 1280px;
     margin: 0 auto;
-    padding: 40px 40px 0;
-    display: flex;
-    justify-content: space-between;
 }
 
 .footer-title {
@@ -824,11 +897,17 @@ li {
 .footer-contacts {
     max-width: 278px;
     height: 234px;
+    grid-area: footer-contacts;
 }
 
 .footer-address {
     max-width: 302px;
     height: 234px;
+    grid-area: footer-address;
+}
+
+.footer-pic {
+    grid-area: footer-pic;
 }
 
 .footer-address, .footer-contacts {
