@@ -177,6 +177,11 @@ li {
         justify-content: center;
     }
 
+    .help-title {
+        font-size: 35px;
+        width: 310px;
+    }
+
     .help-item {
         margin-right: 120px; 
         margin-bottom: 55px; 
@@ -333,6 +338,11 @@ li {
         justify-content: space-between;
     }
 
+    .help-title {
+        font-size: 35px;
+        width: 380px;
+    }
+
     .help-item {
         width: 170px;
         height: 113px;
@@ -412,12 +422,14 @@ li {
 @media(min-width: 320px) and (max-width: 768px) {
 
     .help-container {
+        box-sizing: border-box;
         padding: 42px 15px;
+        max-width: 320px;
+        height: 745px;
     }
 
     .help {
-        width: 320px;
-        height: 745px;
+        width: 290px;
         margin: 0 auto;
     }
 
@@ -427,6 +439,11 @@ li {
         margin: 0 auto;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .help-title {
+        font-size: 25px;
+        width: 220px;
     }
 
     .help-item {
@@ -782,13 +799,11 @@ li {
 }
 
 .help-title {
-    width: 310px;
     margin: 0 auto;
     margin-bottom: 50px;
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
     line-height: 130%;
     display: flex;
     align-items: center;
