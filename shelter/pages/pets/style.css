@@ -351,7 +351,7 @@ li {
     }
 
     .main-container {
-        height: 1342px;
+        /* height: 1342px; */
         padding: 80px 40px 100px;
     }
 
@@ -448,6 +448,7 @@ li {
 
     .footer {  
         max-width: 768px;
+        height: 609px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -547,7 +548,7 @@ li {
         margin-bottom: 40px;
     }
 
-    .footer-pic img{
+    .footer-pic img, .footer-pic{
         width: 260px;
         height: 269px;
     } 
