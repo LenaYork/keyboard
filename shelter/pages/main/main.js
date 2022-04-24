@@ -1,7 +1,7 @@
 // import pets from "./pets";
 
-const windowInnerWidth = document.documentElement.clientWidth;
-const windowInnerHeight = document.documentElement.clientHeight;
+let windowInnerWidth = document.documentElement.clientWidth;
+let windowInnerHeight = document.documentElement.clientHeight;
 
 console.log(windowInnerWidth, windowInnerHeight);
 
@@ -100,7 +100,7 @@ let cardsOnPage = 0;
 
 let currentPets = [];
 let newPets = [];
-const petsNum = [ 0, 1, 2, 3, 4, 5, 6, 7];
+// const petsNum = [ 0, 1, 2, 3, 4, 5, 6, 7];
 
 function getRandomNums() {
 // console.log(randomPetNum);
@@ -223,5 +223,17 @@ document.addEventListener("click", function(event) {
     if (mobileBar && (!event.path.includes(mobileBar) || event.target.classList.contains("header-nav-link"))) {
         toggleMenu();
         mobileBar = null;
+    }
+})
+
+window.addEventListener("resize", function() {
+    let windowInnerWidth = document.documentElement.clientWidth;
+    if (windowInnerWidth >= 768 ) {
+        console.log("зашли в консол!!!!!!!!!!!!!!", windowInnerWidth);
+        mobileMenu.classList.remove("active");
+        document.querySelector("#header").classList.remove("mobile-bar");
+        document.body.classList.remove("overflow");
+        document.querySelector("#wrapper").classList.remove("inactive-bg");
+        document.querySelector("#fade-wrapper").classList.remove("fade-wrapper");
     }
 })
