@@ -14,17 +14,17 @@
 }
 
 html {
-    scroll-behavior: smooth;
     transition: 1s;
-    overflow: overlay;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
 }
 
 a {
@@ -660,6 +660,8 @@ li {
     right: 10px;
     background-color: #292929;
     transform: translateX(0%);
+    padding-top: 15px;
+    z-index: 5;
 }
 
 .mobile-bar .header-ul {
@@ -690,4 +692,27 @@ li {
 
 .mobile-bar .menu-nav {
     display: flex;
+}
+
+.mobile-bar .logo-area {
+    padding-right: 45px;
+}
+
+.inactive-bg {
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    z-index: 0;
+}
+
+.fade-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: rgba(41, 41, 41, 0.6);
+}
+
+.overflow {
+    overflow-y: hidden;
 }
