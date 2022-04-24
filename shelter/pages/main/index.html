@@ -9,8 +9,10 @@
     <title>Shelter</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <div class="top-container">
+            <div id="fade-wrapper">
+            </div>
             <div class="mobile-menu" id="mobile-menu">
                 <div class="mobile-line"></div>
                 <div class="mobile-line"></div>
@@ -73,13 +75,13 @@
             <section class="friends">
                 <h3 class="friends-title">Our friends who<br class="hidden-br-friends"> are looking for a house</h3>
                 <div class="friends-items">
-                    <img src="../../assets/images/arrow-left.png" alt="left" class="arrow desktop-arrow">
-                    <div class="friend-item katrine">
+                    <img src="../../assets/images/arrow-left.png" alt="left" class="arrow desktop-arrow" id="left-pet-arrow">
+                    <!-- <div class="friend-item katrine">
                         <img src="../../assets/images/pets-katrine.png" alt="pet">
                         <p class="pet-name">Katrine</p>
                         <button class="button pet-button">Learn more</button>
-                    </div>
-                    <div class="friend-item jennifer">
+                    </div> -->
+                    <!-- <div class="friend-item jennifer">
                         <img src="../../assets/images/pets-jennifer.png" alt="pet">
                         <p class="pet-name">Jennifer</p>
                         <button class="button pet-button">Learn more</button>
@@ -88,12 +90,12 @@
                         <img src="../../assets/images/pets-woody.png" alt="pet">
                         <p class="pet-name">Woody</p>
                         <button class="button pet-button">Learn more</button>
-                    </div>
-                    <img src="../../assets/images/arrow-right.png" alt="right" class="arrow desktop-arrow">
+                    </div> -->
+                    <img src="../../assets/images/arrow-right.png" alt="right" class="arrow desktop-arrow" id="right-pet-arrow">
 
                     <div class="hidden-friends-arrows">
-                        <img src="../../assets/images/arrow-left.png" alt="left" class="arrow">
-                        <img src="../../assets/images/arrow-right.png" alt="right" class="arrow">
+                        <img src="../../assets/images/arrow-left.png" alt="left" class="arrow hidden-arrow">
+                        <img src="../../assets/images/arrow-right.png" alt="right" class="arrow hidden-arrow">
                     </div>
                     
                 </div>
@@ -203,6 +205,7 @@
             
         
     </div>
+    <script scr="./pets.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>
