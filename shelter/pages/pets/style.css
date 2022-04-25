@@ -250,6 +250,11 @@ li {
     justify-content: space-around;
 }
 
+.active-arrows {
+    border-radius: 50%;
+    border: 2px solid #F1CDB3;
+}
+
 .active-arrows:hover {
     cursor: pointer;
     border-radius: 50%;
@@ -717,3 +722,40 @@ li {
 .overflow {
     overflow-y: hidden;
 }
+
+.pets-arrow {
+    margin: 0;
+    padding: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #CDCDCD;
+}
+
+.active-pets-arrow {
+    
+    border: 2px solid #F1CDB3;
+}
+
+.active-pets-arrow:hover {
+    cursor: pointer;
+    background-color: #F1CDB3;
+}
+
+.current-page-div {
+    background-color: #fddcc4;
+}
+
+.current-page-number{
+    margin: 0;
+    padding: 0;
+}
+
+.disabled-pets-arrow {
+    color: #cdcdcd;
+    border: 2px solid #cdcdcd;
+}
+
