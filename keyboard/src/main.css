@@ -31,7 +31,7 @@
 
 .keyboard {
     width: 770px;
-    height: 300px;
+    height: 500px;
     background-color: #185a04;
     border-radius: 15px;
 }
@@ -42,4 +42,14 @@
     font-weight: bolder;
     font-size: smaller;
     font-style: italic;
+}
+
+.line {
+    border: 1px solid red;
+    height: 50px;
+    margin: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }

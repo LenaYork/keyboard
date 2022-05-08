@@ -10,6 +10,7 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 
 const config = {
   entry: "./src/index.js",
+  devtool: "eval-source-map",
   output: {
     path: path.resolve(__dirname, "dist"),
   },
