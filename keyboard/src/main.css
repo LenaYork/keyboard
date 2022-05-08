@@ -1,0 +1,45 @@
+.main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 600px;
+    background-color: #abe7ab;
+    border: 1px solid #057905;
+    border-radius: 15px;
+}
+
+.title {
+    text-align: center;
+    color: #185a04;
+}
+
+.screen {
+    width: 770px;
+    height: 100px;
+    margin: 30px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: olive;
+    background-color: white;
+}
+
+.screen:focus {
+    color: #4a4a01;
+    font-weight: bolder;
+}
+
+.keyboard {
+    width: 770px;
+    height: 300px;
+    background-color: #185a04;
+    border-radius: 15px;
+}
+
+.notes {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #194105;
+    font-weight: bolder;
+    font-size: smaller;
+    font-style: italic;
+}
