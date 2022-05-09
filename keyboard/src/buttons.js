@@ -4,9 +4,13 @@ import "./buttons.css";
 import { createDom } from "./index";
 
 let pageLanguage = "eng";
-let isShifted = true;
+let isShifted = false;
+
+let displayedText = "";
 
 createDom();
+document.querySelector(".screen").value = displayedText;
+
 
 const ENGLINES = [
     [
@@ -1039,10 +1043,14 @@ function createKeys(line, number) {
     line.forEach( elem => {
         let newEl = document.createElement("div");
         newEl.setAttribute("class", elem.type);
+        newEl.setAttribute("id", isShifted ? elem.shifted : elem.initial);
         let elText = document.createElement("p");
         elText.setAttribute("class", "letter-text");
         elText.innerHTML = isShifted ? elem.shifted : elem.initial;
-        
+
+        if (elem.type.includes("non-letter")) {
+            newEl.addEventListener("click", doCommand);
+        } else newEl.addEventListener("click", typeALetter);
 
         switch(true) {
             case (elText.innerHTML.toLowerCase().includes("shift") 
@@ -1064,7 +1072,7 @@ function createKeys(line, number) {
 
             case (elText.innerHTML.includes("spb")):
                 newEl.classList.add("spb");
-                elText.innerHTML = "";
+                elText.innerHTML = " ";
                 break;
         }
 
@@ -1073,18 +1081,55 @@ function createKeys(line, number) {
     } )
 }
 
-// for (let i = 1; i < 6; i++) {
-//     createKeys()
+//change language
+// if (pageLanguage === "eng") {
+//     ENGLINES.forEach( (elem, index) => createKeys(elem, index+1));
+// } else {
+//     RULINES.forEach( (elem, index) => createKeys(elem, index+1));
 // }
 
-// ENGLINES.forEach( (elem, index) => createKeys(elem, index+1));
-
-RULINES.forEach( (elem, index) => createKeys(elem, index+1));
-
+// RULINES.forEach( (elem, index) => createKeys(elem, index+1));
+ENGLINES.forEach( (elem, index) => createKeys(elem, index+1));
 // createKeys(LINE1ENG, 1);
-// createKeys(LINE2ENG, 2);
-// createKeys(LINE3ENG, 3);
-// createKeys(LINE4ENG, 4);
-// createKeys(LINE5ENG, 5);
 
-// keyA.createKey();
+// document.querySelector(".keyboard").addEventListener("click", function(event) {
+//     console.log(event.target.closest("div").classList);
+//     if (event.target.classList.contains("non-letter") 
+//         || event.target.closest("div").classList.contans("non-letter")) {
+//             console.log("попали на черную клавишу");
+//     } else if (event.target.classList.contains("letter") 
+//         || event.target.closest("div").classList.contains("letter")) {
+//             console.log("попали на белую клавишу");
+//         }
+    
+// });
+
+function typeALetter(event) {
+    console.log(event.target.id);
+    if (event.target.classList.contains("letter")) {
+        displayedText += event.target.id;
+    } else {
+        displayedText += event.target.parentNode.id;
+    }
+    document.querySelector(".screen").value = displayedText;
+}
+
+function doCommand(event) {
+    console.log(event.target.id);
+    // if (event.target.id === "CapsLock") {
+    //     isShifted = !isShifted;
+    //     // ENGLINES.forEach( (elem, index) => createKeys(elem, index+1));
+    //     document.querySelectorAll(".letter-text").forEach(el => {
+    //         if (isShifted) {
+    //             el.innerHTML = el.id.toUpperCase();
+    //         } else {
+    //             el.innerHTML = el.id.toLowerCase();
+    //         }
+            
+    //     });
+    // }
+}
+
+document.addEventListener("keydown", function(event) {
+    displayedText += event.key;
+})
